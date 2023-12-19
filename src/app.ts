@@ -12,8 +12,9 @@ class ServerInit extends ConfigServer {
   public app: express.Application = express()
   public port: number = this.getEnviromentNumber('PORT')
   private readonly corsOptions: CorsType = {
-    origin: '*',
-    optionsSuccessStatus: 200
+    origin: 'http://localhost:3000',
+    optionsSuccessStatus: 200,
+    credentials: true
   }
 
   constructor() {

@@ -1,0 +1,11 @@
+.add-link {
+    @apply text-xl;
+}
+
+.button-add-link {
+    background-color: #0C356A;
+    @apply rounded-md;
+    @apply py-2;
+    @apply px-3;
+    @apply mt-3;
+}

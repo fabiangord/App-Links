@@ -1,0 +1,16 @@
+ul {
+    background-color: #476072;
+    width: 97%;
+    @apply mx-auto;
+    @apply flex;
+    @apply justify-around;
+    @apply py-3;
+    @apply rounded-sm;
+}
+
+li:hover {
+    background-color: #bbdec6;
+    @apply text-black;
+    @apply px-1;
+    @apply rounded-lg;
+}

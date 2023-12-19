@@ -42,4 +42,5 @@ export type LinkType = {
 export type CorsType = {
   origin: string
   optionsSuccessStatus: number
+  credentials: boolean
 }

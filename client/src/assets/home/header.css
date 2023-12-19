@@ -1,0 +1,7 @@
+header {
+    @apply text-5xl;
+    @apply flex;
+    @apply justify-center;
+    @apply mx-auto;
+    @apply my-3;
+}

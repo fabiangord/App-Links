@@ -1,0 +1,9 @@
+.button-card {
+    background-color: #164863;
+    @apply mx-6;
+    @apply my-1;
+    @apply p-2;
+    @apply rounded-md;
+    @apply font-light;
+    @apply text-sm;
+}

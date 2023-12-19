@@ -12,16 +12,15 @@ export class AuthMiddleware {
 
       const { refreshToken } = req.cookies
 
-      jwt.verify(refreshToken.token, process.env.REFRESH_TOKEN_KEY as Secret, async (err: unknown, _decoded: unknown) => {
+      jwt.verify(refreshToken, process.env.REFRESH_TOKEN_KEY as Secret, async (err: unknown, _decoded: unknown) => {
         if (err) {
-          console.log(err)
           res.status(401).json({ message: 'Invalid refresh Token' })
           return
         }
 
-        const tokenBearer = req.headers.authorization
+        const token = req.headers.authorization
 
-        const token = tokenBearer?.split(' ')[1]
+        // const token = tokenBearer?.split(' ')[1]
 
         if (token === undefined) return res.status(401).json({ message: 'Invalid Token' })
 

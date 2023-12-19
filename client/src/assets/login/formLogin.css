@@ -1,0 +1,47 @@
+form {
+    background: url('../../../public/img/internet-3116062_1280.jpg');
+    @apply container;
+    @apply flex;
+    @apply flex-col;
+    @apply w-1/2;
+    @apply h-60;
+    @apply mx-auto;
+    @apply my-24;
+    @apply rounded-xl;
+    @apply h-80;
+}
+
+h1 {
+    @apply text-black;
+    @apply mx-auto;
+    @apply my-5;
+    @apply font-extrabold;
+    @apply text-4xl;
+}
+
+input {
+    @apply w-1/2;
+    @apply text-black;
+    @apply mx-auto;
+    @apply p-2;
+    @apply my-1;
+    @apply rounded-md;
+}
+
+input::placeholder {
+    @apply px-1;
+}
+
+input:focus {
+    @apply px-5;
+}
+
+.button-form {
+    background-color: #010300;
+    @apply text-white;
+    @apply mx-auto;
+    @apply my-2;
+    @apply px-3;
+    @apply py-2;
+    @apply rounded-md;
+}

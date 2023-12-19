@@ -1,0 +1,32 @@
+main {
+    @apply container;
+    width: 1fr;
+    @apply mt-5;
+    @apply rounded-lg;
+    @apply py-6;
+    @apply text-center;
+    background-color: #548CA8;
+}
+
+.header-card {
+    @apply mb-6;
+}
+
+.name-card {
+    @apply font-bold;
+    @apply mr-2;
+    @apply text-black;
+}
+
+.schema-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    @apply mx-11;
+}
+
+.button-add-links {
+    @apply flex;
+    @apply justify-center;
+    @apply mx-auto;
+}
